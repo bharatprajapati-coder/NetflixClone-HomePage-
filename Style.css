@@ -1,0 +1,699 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: black;
+}
+
+
+.main {
+    top:0;
+    background-image: url("D:/Frontend/CodeWithHarryWeb/Netflix Clone Using Html, CSS/Images/main_bg.jpg");
+    background-position: center center;
+     background-size: max(1400px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+   
+}
+
+.borderlinebottom
+{
+    
+    height: 8px;
+    background-color: rgb(56, 56, 56);
+}
+.main .box {
+    height:100vh;
+    width: 100%;
+    opacity: 0.69;
+    position:absolute;
+    top: 0;
+    background-color: black;
+}
+
+.navbar{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.navbar img{
+    position: relative;
+  color: red;
+    width: 140px;
+    z-index: 10;
+}
+.navbuttons{
+    padding: relative;
+    z-index: 10;
+}
+
+.btn{
+    font-family:sans-serif ;
+    font-size: 18px;
+    padding: 6px 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    border: 0.5px solid rgb(116, 114, 114);
+    background: transparent;
+}
+.redbtn{
+    font-family:sans-serif ;
+    font-size: 18px;
+    padding: 6px 14px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.content {
+    display:flex;
+    height: calc(100% - 100px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+    padding: 0 30px;
+    position: relative;
+
+}
+.content>  :first-child{
+    z-index: 10;
+    font-weight: bold;
+    font-family:"sans-serif";
+    font-size: 40px;
+    color:white;
+    text-align: center;
+}
+.content> :nth-child(2){
+    font-weight: bold;
+    font-family:"sans-serif";
+    font-size: 26px;
+    color:white;
+    z-index: 10;
+    text-align: center;
+}
+.content> :nth-child(3){
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    font-size: 26px;
+    color:white;
+    z-index: 10;
+    text-align: center;
+}
+
+ .input {
+   z-index: 10;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap:16px;
+   
+}
+.inputarea{
+    padding:10px;
+    font-size: 1.3rem;
+    width:19rem;
+     font-family:sans-serif ;
+     color: rgb(255, 254, 254);
+     border-radius: 4px;
+     background:transparent;
+     background-color: rgba(24,24,24,0.5);
+     border: 0.5px solid rgb(116, 114, 114);
+}
+::placeholder{
+    color: rgb(148, 144, 144);
+    font-size: 14px;
+}
+.input button{
+    background-color: rgb(248, 11, 11);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.9rem;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0px solid bisque;
+    cursor: pointer;
+}
+
+.first{
+    display: flex;
+    max-width: 90vw;
+    margin: 4vh 8vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.insidefirst{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh;   
+    padding:34px 0px;                     
+}
+
+.insidefirst p{
+    font-size: 1.5rem;
+    width: 36vw;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+#second span{
+    width: 40vw;
+}
+
+
+
+.insidefirst> p> span{
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tvimg{
+    position: relative;
+}
+.first img{
+    width: 28rem;
+    position: relative;
+    z-index: 10;
+   
+}
+.tvimg video{
+    width: 342px;
+  position: absolute;
+  top:56px;
+  left: 40px;
+    
+}
+
+@media screen and (max-width:1030px){
+    .insidefirst{
+        margin: 0vh;
+        gap: 4vw;
+
+    }
+    .first{
+        margin: 5vh;
+    }
+}
+
+
+
+/* @media screen and (max-width:900px){
+    .insidefirst p{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    }
+    .insidefirst> p> span {
+        font-size: 1.8rem;
+        justify-content: center;
+        flex-direction: row;
+    }
+} */
+
+ /* @media screen and (max-width:880px){
+    .insidefirst p{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    width: 80vw;
+    display: flex;
+    }
+    .insidefirst> p> span {
+        font-size: 1.8rem;
+        justify-content: center;
+        flex-direction: row;
+    } 
+
+  
+}  */
+
+.third{
+    display: flex;
+    max-width: 80vw;
+    margin: 4rem 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.insidethird{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;   
+    gap:50px;   
+    flex-wrap: wrap;                  
+}
+
+    
+.insidethird p{
+    font-size: 1.5rem;
+    width: 31rem;
+    color:rgb(255, 250, 250);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+
+.insidethird> p> span{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.third img{
+    width: 28rem;
+    position: relative;
+    z-index: 10;
+   
+}
+ /* .third .tvimg video{
+    width: 300px;
+    position: absolute;
+    top: 35px;
+    left: 71px; 
+} */
+
+#fouthsectionvideo{
+    width: 282px;
+  position: absolute;
+  top:49px;
+  left: 78px;
+}
+
+
+@media screen and (max-width:880px) {
+        #fourth{
+             display: flex;
+             flex-direction: row;
+        }
+
+        #fourthp p{
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            display: flex;
+            text-overflow: clip;
+            flex-wrap: wrap;
+            word-wrap:initial;
+            }
+            .fourthp> p> span {
+                font-size: 1.8rem;
+                justify-content: center;
+                flex-direction: row;
+            } 
+            /* .content{
+                padding: -1px 30px;
+            } */
+        }
+            .content{
+                gap: 20px;
+                padding: 0 20px;
+            }
+            .content> :first-child{
+                
+                font-size: 37px;
+            }
+            .content> :nth-child(3) 
+            {
+                font-size: 25px;
+                /* font-weight: 200; */
+
+}
+
+
+
+.faq{
+    display: flex;
+    margin: auto;
+    margin:1.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.faq> span{
+    font-size: 3rem;
+    color:white;
+    font-weight: 900;
+}
+
+.questions{
+    margin: 1rem 0rem;
+}
+.btnprime {
+    margin:0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    padding:1.5rem;
+    background-color: rgb(65,65,65);
+    color:rgb(255, 255, 255);
+    justify-content: space-between;
+}
+.btnprime span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.goingforfooter{
+    display: flex;
+    margin: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:white;
+} 
+
+
+.input1{
+    z-index: 10;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     gap:16px;
+    margin: 5vh;
+ }
+ .inputarea{
+     padding:10px;
+     font-size: 1.3rem;
+     width:19rem;
+      font-family:sans-serif ;
+      color: rgb(255, 254, 254);
+      border-radius: 4px;
+      background:transparent;
+      background-color: rgba(24,24,24,0.5);
+      border: 0.5px solid rgb(116, 114, 114);
+ }
+ ::placeholder{
+     color: rgb(148, 144, 144);
+     font-size: 14px;
+ }
+ .input1 button{
+     background-color: rgb(248, 11, 11);
+     color: white;
+     font-family: sans-serif;
+     font-size: 1.9rem;
+     padding: 0.5rem 2rem;
+     font-weight: 500;
+     border-radius: 5px;
+     border: 0px solid bisque;
+     cursor: pointer;
+ }
+ 
+footer{
+    padding: 1rem 0rem 8rem 0rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin:auto;
+        max-width: 70vw;
+}
+
+.footeritems{
+    display: flex;  
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footeritems a{
+    color:rgb(141, 137, 137);
+    z-index: 10;
+    display: flex;
+}
+.question{
+    color: rgb(247, 247, 247);
+    padding:1vw 14vw;
+}
+
+
+
+
+@media screen and (max-width:768px)
+{
+    .content> :first-child {
+        font-size: 36px;
+    }
+
+    .faq> span{
+        font-size: 2.5rem;
+    }
+    #fouthsectionvideo {
+        width: 36vw;
+    }
+    .content> :nth-child(3) {
+        font-size: 1.3rem;
+    }
+
+    #fourthp> p> span{
+        font-size: 2rem;
+    }
+    .first{
+        margin-left: 7vh;
+    }
+}
+
+
+@media screen and (max-width:690px ) {
+    .content> :first-child {
+        font-size: 28px;
+    }
+    .content> :nth-child(2)
+    {
+        font-size: 20px;
+    }
+    .content> :nth-child(3)
+    {
+        font-size: 20px;
+    }
+    #fourth{
+        flex-direction: column;
+    }
+   .insidefirst p{
+    width: 80vw;
+   }
+}
+
+@media screen and (max-width:638px ){
+    .faq> span{
+    font-size: 2rem;
+    }
+    .btnprime{
+        padding: 0.6rem;
+    }
+    .inputarea{
+    padding: 5px;
+    font-size: 1rem;
+    width: 40vw;
+    }
+    .input button{
+        font-size: 1.5rem;
+    }
+    .input1 button{
+        font-size: 1.5rem;
+    }
+    .footer{
+        max-width: 80vw;
+    }
+    .question{
+        padding: 3vw 10vw;
+    }
+    .btnprime span {
+        font-size: 1rem;
+    }
+    .goingforfooter{
+        margin: 0.9rem 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 530px){
+.faq> span {
+    font-size: 1.5rem;
+}
+.input button{
+    padding : 0.5rem 1rem;
+} 
+.navbar{
+    max-width: 100vw;
+    height: 80px;
+}
+.borderlinebottom{
+    margin: 20px 0px;
+}
+.first img {
+    width: 25rem;}
+} 
+
+@media screen and (max-width:425px)
+{
+
+    .navbar img {
+        width: 120px;
+    }  
+    .btn {
+        font-size: 15px;
+        padding: 6px 15px;
+    } 
+    .redbtn {
+        font-size: 15px;
+        padding: 6px 10px;
+    } 
+    .content {
+   padding: 0 5px;
+    }
+    .content> :first-child {
+        font-size: 20px;
+    }
+    .content> :nth-child(2) {
+        font-size: 16px;
+    }
+    .content> :nth-child(3) {
+        font-size: 16px;
+    }
+    .first img {
+        width: 85vw;
+        background-repeat: no-repeat;
+    }
+    .insidefirst{
+        padding: 10px 0px
+    }
+    #fourthp> p> span {
+        font-size: 1.5rem;
+        }
+    #fourthp p {
+        font-size: 1rem;
+        }
+        .first img {
+            width: 72vw;
+        }
+        #fourthp> p> span {
+            font-size: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tvimg video {
+            width: 222px;
+            top: 43px;
+            left: 40px;
+        }
+
+        #fouthsectionvideo {
+            width: 194px;
+            top: 25px;
+            left: 51px;
+        }
+        .input1 button {
+            font-size: 1rem;
+        }
+        .input button {
+            font-size: 1rem;
+        }
+        .input{
+            gap: 5px;
+        }
+        .input1{
+            gap: 7px;
+        }
+        .goingforfooter {
+        font-size: 0.9rem;
+        }
+        .faq> span {
+            font-size: 22px;
+        }
+        .btnprime {
+            padding: 0.2rem;
+        }
+        .btnprime span {
+            font-size: 0.8rem;
+        }
+        .footeritems a {
+            font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+#fouthsectionvideo {
+    width: 167px;
+}
+.footeritems {
+    margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 325px){
+    .tvimg video {
+    width: 156px;
+    }
+    #fourthp p {
+        font-size: 0.7rem;
+    }
+    .input1 button {
+        padding: 0.5rem 0.5rem;
+    }
+    .footeritems {
+        margin-right: 10px;
+    }
+    #fouthsectionvideo {
+        width: 140px;
+        left: 43px;
+        top: 20px;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    .main{
+        height: 80vh;
+    }
+    .main .box {
+        height: 80vh;
+    }   
+
+         #fouthsectionvideo {
+        width: 47vw;
+ 
+    }
+}
+
+
+
+@media screen and (max-width: 390px){
+#fouthsectionvideo {
+    width: 46vw;
+}
+}
+
+
+@media screen and (max-width: 414px){
+#fouthsectionvideo {
+    width: 47vw;
+}
+}
