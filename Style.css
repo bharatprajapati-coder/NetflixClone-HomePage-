@@ -11,11 +11,11 @@ body{
 
 .main {
     top:0;
-    background-image: url("D:/Frontend/CodeWithHarryWeb/Netflix Clone Using Html, CSS/Images/main_bg.jpg");
+    background-image: url("/Images/main_bg.jpg");
     background-position: center center;
      background-size: max(1400px, 100vw);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh;  
     position: relative;
    
 }
